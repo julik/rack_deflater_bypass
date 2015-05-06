@@ -1,8 +1,14 @@
-= rack_deflater_bypass
+# rack_deflater_bypass
 
-Description goes here.
+Ensures that if you send a .gz file from your Rack stack `Rack::Deflate` will not try to recompress
+it and damage the headers in a way that confuses old browsers.
 
-== Contributing to rack_deflater_bypass
+To use, just add it to your Rack stack __instead of Rack::Deflate__
+
+    # config.ru
+    use RackDeflaterBypass 
+
+## Contributing to rack_deflater_bypass
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
