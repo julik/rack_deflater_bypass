@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://github.com/julik/rack_deflater_bypass"
   s.licenses = ["MIT"]
-  s.rubygems_version = "2.2.2"
+  s.rubygems_version = "2.2.0"
   s.summary = "Bypass Rack::Deflate for raw compressed responses"
 
   if s.respond_to? :specification_version then
